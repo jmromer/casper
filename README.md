@@ -99,13 +99,15 @@ $ rake install['casper']
 
 ## Thanks!
 
-Thanks to the following developers for their contributions here:
+Thanks to the following developers for their contributions:
 
 [Kat Hagan](http://github.com/codebykat)<br>
 [Russell Brooks](http://github.com/iq9)<br>
 [Alejandra Estanislao](http://github.com/alestanis)<br>
 [Rosario Rascuna](http://github.com/rosario)<br>
 [Rob Dodson](http://github.com/robdodson)<br>
+
+And, of course, to the [Ghost](http://github.com/TryGhost/Casper) theme.
 
 Pull requests are welcome!
 
