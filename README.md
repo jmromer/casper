@@ -1,12 +1,13 @@
 Casper (for Octopress)
 ================
 
-An Octopress port of Ghost's Casper theme.
+An Octopress port of Ghost's Casper theme, with GitHub-style syntax highlighting (or alternate [Twilight theme](http://gist.github.com/iq9/2906599)).
 
 ## Preview
 
 ![Blog Index](http://s3.amazonaws.com/gh_pages/casper/screen1.jpg)
 ![Code Snippet](http://s3.amazonaws.com/gh_pages/casper/screen2.jpg)
+
 
 ## Prerequisites
 
@@ -84,7 +85,18 @@ $ rake install['casper']
 # regenerate, make changes, etc...
 ```
 
-##### Pull requests are welcome!
+
+## Thanks!
+
+Thanks to the following developers for their contributions here:
+
+[Kat Hagan](http://github.com/codebykat)<br>
+[Russell Brooks](http://github.com/iq9)<br>
+[Alejandra Estanislao](http://github.com/alestanis)<br>
+[Rosario Rascuna](http://github.com/rosario)<br>
+[Rob Dodson](http://github.com/robdodson)<br>
+
+Pull requests are welcome!
 
 ## License
 
