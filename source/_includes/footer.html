@@ -1,0 +1,26 @@
+<a class="subscribe icon-feed" href="{{ site.url}}/atom.xml"><span class="tooltip">Subscribe!</span></a>
+
+
+<div class="inner">
+
+{% if site.twitter_user or site.github_user or site.googleplus_user %}
+Follow me on
+{% endif %}
+
+{% if site.twitter_user %}
+<a class="social twitter" href="http://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a>
+{% endif %}
+
+{% if site.github_user %}
+<a class="social github" href="http://github.com/{{ site.github_user }}" title="GitHub">GitHub</a>
+{% endif %}
+
+{% if site.googleplus_user %}
+<a class="social google_plus" href="http://plus.google.com/{{ site.googleplus_user }}" title="Google+">Google+</a>
+{% endif %}
+
+<section class="copyright">All content copyright <a href="/">{{ site.author }}</a> © {{ site.time | date: "%Y" }} • All rights reserved.</section>
+
+<section class="poweredby">Casper theme by <a class="icon-ghost" href="http://tryghost.org">Ghost</a> &amp; Published with <a href="http://octopress.org">Octopress</a></section>
+
+</div>

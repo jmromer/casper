@@ -1,0 +1,4 @@
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"@fontAwesomePath:\": expected pseudoclass or pseudoelement, was \" '../font';\"\A         on line 1 of /home/pi/octopress/sass/font-awesome.scss\A \A 1: /home/pi/octopress/sass/font-awesome.scss"; }

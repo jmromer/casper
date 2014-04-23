@@ -1,0 +1,18 @@
+---
+layout: default-post
+single: true
+---
+
+<article class="post">
+  {% include article.html %}
+  {% include article-footer.html %}
+  <hr>
+  {% unless page.sharing == false %}
+    {% include post/sharing.html %}
+  {% endunless %}
+  {% if site.disqus_short_name and page.comments == true %}
+  <section id="comment">
+    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+  </section>
+  {% endif %}
+</article>

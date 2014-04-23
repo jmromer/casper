@@ -1,0 +1,4 @@
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \".ie7icon\": expected \"{\", was \"(@inner) {\"\A         on line 17 of /home/pi/octopress/sass/font-awesome-ie7.scss"; }
