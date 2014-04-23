@@ -6,14 +6,25 @@ An Octopress port of Ghost's Casper theme, with GitHub-style syntax highlighting
 ## Preview
 
 ![Blog Index](http://s3.amazonaws.com/gh_pages/casper/screen1.jpg)
-![Code Snippet](http://s3.amazonaws.com/gh_pages/casper/screen2.jpg)
+
+GitHub-style syntax highlighting:
+
+![Code Snippet (Light)](http://s3.amazonaws.com/gh_pages/casper/screen2a.jpg)
+
+Twilight-themed syntax highlighting:
+
+![Code Snippet (Dark)](http://s3.amazonaws.com/gh_pages/casper/screen2b.jpg)
+
+To switch between the two, comment-out the appropriate line in `sass/screen.scss`:
+
+![Toggling](http://s3.amazonaws.com/gh_pages/casper/switching.jpg)
 
 
 ## Prerequisites
 
 This theme uses kramdown and coderay for syntax highlighting. Ensure the following changes are made before generating your octopress site.
 
-In `\Gemfile`:
+In the `Gemfile`:
 
 ```ruby
 group :development do
@@ -25,7 +36,7 @@ group :development do
 end
 ```
 
-In `\_config.yml`:
+In `_config.yml`:
 
 ```yaml
 # markdown: rdiscount
