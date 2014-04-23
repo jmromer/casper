@@ -107,7 +107,7 @@ Thanks to the following developers for their contributions:
 [Rosario Rascuna](http://github.com/rosario)<br>
 [Rob Dodson](http://github.com/robdodson)<br>
 
-And, of course, to the [Ghost](http://github.com/TryGhost/Casper) theme.
+And, of course, to the [Ghost](http://github.com/TryGhost/Casper) team.
 
 Pull requests are welcome!
 
