@@ -67,7 +67,7 @@ pygments: false # default python pygments have been replaced by pygments.rb
 #### Installing
 ```
 $ cd <your octopress directory>
-$ git submodule add https://github.com/jmromer/casper.git .themes/casper
+$ git submodule add https://github.com/jkrmr/casper.git .themes/casper
 $ git submodule update --init
 $ rake install['casper']
 $ rake generate
@@ -86,7 +86,7 @@ $ rake install['casper']
 #### Installing
 ```
 $ cd <your octopress directory>
-$ git clone https://github.com/jmromer/casper .themes/casper
+$ git clone https://github.com/jkrmr/casper .themes/casper
 $ rake install['casper']
 $ rake generate
 ```
