@@ -5,20 +5,23 @@ An Octopress port of Ghost's Casper theme, with GitHub-style syntax highlighting
 
 ## Preview
 
-![Blog Index](http://s3.amazonaws.com/gh_pages/casper/screen1.jpg)
+![Blog Index](images/cover-image.jpg)
 
 GitHub-style syntax highlighting:
 
-![Code Snippet (Light)](http://s3.amazonaws.com/gh_pages/casper/screen2a.jpg)
+![Code Snippet (Light)](images/colors-github.jpg)
 
 Twilight-themed syntax highlighting:
 
-![Code Snippet (Dark)](http://s3.amazonaws.com/gh_pages/casper/screen2b.jpg)
+![Code Snippet (Dark)](images/colors-twilight.jpg)
 
 To switch between the two, comment-out the appropriate line in `sass/screen.scss`:
 
-![Toggling](http://s3.amazonaws.com/gh_pages/casper/switching.jpg)
-
+```scss
+@import "base";
+@import "coderay-github";
+// @import "coderay-twilight";
+```
 
 ## Prerequisites
 
