@@ -1,20 +1,6 @@
 @import "base";
-@import "coderay-github";
-// @import "coderay-twilight";
 
 #site-head {
-  background-image: url('/images/cover.jpg');
+  background-image: url(/images/cover.jpg);
 }
 
-.footnotes {
-  font-size: 13px;
-  line-height: 16px;
-  color: #666;
-  a[rel=reference] { text-decoration: none; }
-  p { margin-bottom: 6px; }
-}
-
-.CodeRay {
-  margin-top: 16px;
-  margin-top: 1.6rem;
-}
