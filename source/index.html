@@ -4,16 +4,34 @@ layout: default
 
 {% assign index = true %}
 {% assign is_first_post = true %}
+
 {% for post in paginator.posts %}
-{% assign content = post.content %}
-    <article class="post">{% include article.html %}</article>
+  {% assign content = post.content %}
+    <article class="post">
+      {% include article.html %}
+    </article>
 {% endfor %}
+
 <nav class="pagination" role="pagination">
-    {% if paginator.previous_page %}
-        <a class="newer-posts" href="{{paginator.previous_page}}">← Newer Posts</a>
+  {% if paginator.previous_page %}
+    {% assign url = site.paginate_directory | append:'/' | append:paginator.previous_page %}
+
+    {% if paginator.previous_page == 1 %}
+      {% assign url = "/" %}
     {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-        <a class="older-posts" href="{{paginator.next_page}}">Older Posts →</a>
-    {% endif %}
+
+    <a class="newer-posts" href="{{ url }}"> ← Newer Posts </a>
+  {% endif %}
+
+  <span class="page-number">
+    Page {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+
+  {% if paginator.next_page %}
+    <a class="older-posts"
+        href="{{ site.paginate_directory }}/{{ paginator.next_page }}">
+      Older Posts →
+    </a>
+  {% endif %}
 </nav>
+
