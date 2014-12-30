@@ -1,63 +1,48 @@
 Casper (for Octopress)
-================
+=======================
 
-An Octopress port of Ghost's Casper theme, with GitHub-style syntax highlighting (or alternate [Twilight theme](http://gist.github.com/iq9/2906599)).
+An Octopress port of Ghost's Casper theme.
 
 ## Preview
 
 ![Blog Index](images/cover-image.jpg)
 
-GitHub-style syntax highlighting:
+**Syntax Highlighting**
+(courtesy of [Highlight.js](http://highlightjs.org))
 
-![Code Snippet (Light)](images/colors-github.jpg)
+**GitHub**:
 
-Twilight-themed syntax highlighting:
+![GitHub](images/casper-github.jpg)
 
-![Code Snippet (Dark)](images/colors-twilight.jpg)
+**Railscasts**:
 
-To switch between the two, comment-out the appropriate line in `sass/screen.scss`:
+![Railscasts](images/casper-railscasts.jpg)
 
-```scss
-@import "base";
-@import "coderay-github";
-// @import "coderay-twilight";
+**Solarized Dark**:
+
+![Solarized Dark](images/casper-solarized_dark.jpg)
+
+To have Highlight.js color your code, use tilde-gated code blocks. Example:
+
+```
+~~~
+console.log("Here is some code");
+~~~
 ```
 
-## Prerequisites
+The language will be automatically detected, but to set it explicitly, just
+append the language name to the opening fence:
 
-This theme uses kramdown and coderay for syntax highlighting. Ensure the following changes are made before generating your octopress site.
-
-In the `Gemfile`:
-
-```ruby
-group :development do
-# .
-# .
-# .
-  gem 'kramdown'
-  gem 'coderay'
-end
+```
+~~~js
+console.log("Here is some code");
+~~~
 ```
 
-In `_config.yml`:
+To change themes, set `highlight_js_color_theme` in `_config.yml`.
 
-```yaml
-# markdown: rdiscount
-# rdiscount:
-#   extensions:
-#     - autolink
-#     - footnotes
-#     - smart
-
-markdown: kramdown
-kramdown:
-  use_coderay: true
-  coderay:
-    coderay_line_numbers: nil
-    coderay_css: class
-
-pygments: false # default python pygments have been replaced by pygments.rb
-```
+See [Highlight.js](http://highlightjs.org) for a complete list of color schemes
+and languages recognized.
 
 
 ## Installation
