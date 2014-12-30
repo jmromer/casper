@@ -11,8 +11,21 @@ tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
 vero eos et accusam et justo duo[^1] dolores et ea rebum. Stet clita kasd gubergren,
 no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
+Some code:
 
+~~~js
+var hello = function (name) {
+  console.log("Hello, " + name + '.');
+}
+hello('World');   // prints 'Hello, World.' to stdout
 ~~~
+
+
+<!-- More -->
+
+## Some more code
+
+~~~ruby
 def test
   @answer = 6*9
   if @answer != 42  # this should never happen
@@ -21,9 +34,6 @@ def test
     print "Don't panic."
 end
 ~~~
-{:.language-ruby}
-
-<!-- More -->
 
 ## this is a sample header
 
@@ -34,3 +44,4 @@ no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 
 [^1]: The footnote [content](http://www.example.com).
+
