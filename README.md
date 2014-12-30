@@ -22,22 +22,10 @@ An Octopress port of Ghost's Casper theme.
 
 ![Solarized Dark](images/casper-solarized_dark.jpg)
 
-To have Highlight.js color your code, use tilde-gated code blocks. Example:
+To have Highlight.js color your code, use tilde-gated code blocks (`~~~`).
 
-```
-~~~
-console.log("Here is some code");
-~~~
-```
-
-The language will be automatically detected, but to set it explicitly, just
-append the language name to the opening fence:
-
-```
-~~~js
-console.log("Here is some code");
-~~~
-```
+Your code's language will be automatically detected, but to set it explicitly, just
+append the language name to the opening fence (`~~~js`).
 
 To change themes, set `highlight_js_color_theme` in `_config.yml`.
 
